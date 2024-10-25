@@ -25,12 +25,12 @@ idx = j;
 min = array[idx];
 }
 }
-if (idx != i)
+if (min != array[i])
 {
 c = array[i];
 array[i] = array[idx];
 array[idx] = c;
-}
 print_array(array, size);
+}
 }
 }
