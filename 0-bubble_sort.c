@@ -13,24 +13,26 @@ int c = 0;
 size_t i, j;
 if (!array || size == 0)
 return;
-else
+if (size == 1)
 {
+print_array(array, 1);
+return;
+}
 for (i = 0; i < size; i++)
 {
-for (j = 0; j < size; j++)
+for (j = 1; j < size; j++)
 {
-if (array[j] < array[j + 1])
+if (array[j] > array[j - 1])
 {
 continue;
 }
 else
 {
 c = array[j];
-array[j] = array[j + 1];
-array[j + 1] = c;
+array[j] = array[j - 1];
+array[j - 1] = c;
 }
 print_array(array, size);
-}
 }
 }
 }
