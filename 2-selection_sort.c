@@ -22,11 +22,7 @@ for (j = i + 1; j < size; j++)
 if (array[j] < min)
 {
 idx = j;
-min = array[j];
-}
-else
-{
-continue;
+min = array[idx];
 }
 }
 if (idx != i)
