@@ -11,13 +11,8 @@ void bubble_sort(int *array, size_t size)
 {
 int c = 0;
 size_t i, j;
-if (!array || size == 0)
+if (!array || size <= 1)
 return;
-if (size == 1)
-{
-print_array(array, 1);
-return;
-}
 for (i = 0; i < size; i++)
 {
 for (j = 1; j < size; j++)
