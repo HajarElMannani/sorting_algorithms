@@ -16,7 +16,7 @@ return;
 for (i = 0; i < size - 1; i++)
 {
 idx = i;
-min = array[idx];
+min = array[i];
 for (j = i + 1; j < size; j++)
 {
 if (array[j] < min)
