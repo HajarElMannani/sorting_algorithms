@@ -9,9 +9,9 @@
 
 void shell_sort(int *array, size_t size)
 {
-int j;
-int gap, tmp;
-size_t  i;
+size_t j;
+int tmp;
+size_t i, gap;
 gap = knuth(size);
 if (array == NULL || size < 2)
 return;
@@ -34,9 +34,9 @@ print_array(array, size);
  *@size: size of the array
  *Return: Nothing
  */
-int knuth(int size)
+size_t knuth(size_t size)
 {
-int n = 1;
+size_t n = 1;
 while (n <= size)
 {
 n = n * 3 + 1;
